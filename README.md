@@ -34,7 +34,7 @@ More information about plugins in the [MkDocs documentation][mkdocs-plugins].
   plugins:
     - search
     - tree-title:
-      join_string: " - "
+        join_string: " - "
   ```
 
 ## Usage
@@ -66,6 +66,8 @@ nav:
 ![Mkdocs website title][title]
 
 ### Template Navigation
+
+Simply replace `{{ page.next_page.title }}` with `{{ page.next_page.tree_title }}`, e.g.:
 
 ```html
 {% if page.next_page %}
